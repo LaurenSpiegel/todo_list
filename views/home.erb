@@ -1,0 +1,13 @@
+<h1>Todos</h1>
+
+<form method='GET' action='new_todo'>
+  <input type='text' name='name' />
+  <input type='submit' value='Enter To Do Item' />
+</form>
+
+<ul>
+  <% @todos.each do |todo| %>
+  <li><%= todo %></li>  
+  <% end %>
+</ul>
+
